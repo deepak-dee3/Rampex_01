@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6c63ff, #45aaf2);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 span {
+  color: #ffdd59;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ffdd59;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background: #ffc048;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.about, .skills, .projects, .contact {
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card .btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-card .btn:hover {
+  background: #5945e5;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+
+
+   </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span>Deepak D</span></h1>
+      <p>A passionate developer building amazing things on the web.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm a developer skilled in creating beautiful, responsive websites and applications. I enjoy problem-solving and learning new technologies.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Short description of your project.</p>
+          <a href="#" class="btn">View More</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Short description of your project.</p>
+          <a href="#" class="btn">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: deepakd.22aid@kongu.edu</p>
+      <p>Phone: 8870853143</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Deepak D. All rights reserved.</p>
+  </footer>
+</body>
+</html>
