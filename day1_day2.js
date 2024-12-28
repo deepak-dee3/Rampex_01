@@ -341,7 +341,7 @@ async function all_call_here()
 }
 
 
-/////callback example
+/////callback example today work(day2)
 
 function func1(func2)
 {
@@ -367,7 +367,7 @@ function func2(name)
    
 
 }
-////"${a}"
+
 
 function func3(name)
 {
