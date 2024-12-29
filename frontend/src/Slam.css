@@ -1,0 +1,53 @@
+/* .main{
+
+    background-color: red;
+}
+.main2{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+
+    background-color: blue;
+} */
+
+.main {
+   
+    height: 150vh;
+    
+    background-image: url('https://th.bing.com/th/id/OIF.AFhCEpLzW07asg9SCpp6bA?rs=1&pid=ImgDetMain');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .main2 {
+    /* text-align: center;  */
+   padding-left: 10%;
+   /* border-color: black; */
+   border: 5px solid black; 
+   /* padding-top: 5%; */
+    height: 59%; 
+    width: 50%; 
+    background-color: aqua;
+    opacity: 0.65;
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    border-radius: 5%;
+  }
+  .content{                     
+    color: black;
+    font-size: medium;
+    font-weight: bold;  
+  }
+  
+
+.heading_slam{
+
+    text-align: center;
+    padding-top: 5%;
+    color: black;
+}
