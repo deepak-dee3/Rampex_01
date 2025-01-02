@@ -1,0 +1,4 @@
+npm init -y
+npm i express nodemon 
+
+nodemon - continous flow , without terminating the work in backend.
