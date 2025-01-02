@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+
+
+
 app.get('/', (req,res) => {
 
     console.log("hi");
@@ -12,11 +15,10 @@ app.get('/', (req,res) => {
 //     message2: "World",
 // });
 
-//app.set("views", "backend/VIEW/index.ejs"); // Specify the correct path to your views directory
    app.set("view engine", "ejs");
 
 
-   res.render("index",{text:"kamal"});
+   res.render("index",{text:"kamal"});  //index.ejs file 
 
 
 
@@ -25,7 +27,18 @@ app.get('/', (req,res) => {
     //You should only send one response per request. 
     // If you want to send multiple pieces of data, 
     // combine them into a single response or log them to the console.
-})
+});
+
+app.get('/user/new',(req,res)=>{
+
+    res.send("user1 page");
+});
+ 
+
+
+const userRouter = require('./routes/user');
+
+app.use('/users',userRouter)
 
 
 
