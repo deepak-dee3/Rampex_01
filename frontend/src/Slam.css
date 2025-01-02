@@ -8,13 +8,14 @@
     width: 50%;
 
     background-color: blue;
+    https://th.bing.com/th/id/OIF.AFhCEpLzW07asg9SCpp6bA?rs=1&pid=ImgDetMain
 } */
 
 .main {
    
     height: 150vh;
     
-    background-image: url('https://th.bing.com/th/id/OIF.AFhCEpLzW07asg9SCpp6bA?rs=1&pid=ImgDetMain');
+    background-image: url(' https://th.bing.com/th/id/OIF.AFhCEpLzW07asg9SCpp6bA?rs=1&pid=ImgDetMain');
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: center;

@@ -1,0 +1,14 @@
+DOM (Html)
+
+
+  it renders all the tags for each changes
+
+
+Virtual Dom (react)
+
+
+ it renders only a particular tag , if any chnages applied
+
+
+ UseState - starts from 0 while adding
+ useRef   - starts from 1 while adding
