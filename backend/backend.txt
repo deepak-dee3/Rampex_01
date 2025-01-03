@@ -30,3 +30,6 @@ html file in backend = npm i ejs in terminal , create view folder and create ind
 
 
 MVC Architecture - Model View Controller
+
+
+req,res,next ; next = is a middleware ;  
