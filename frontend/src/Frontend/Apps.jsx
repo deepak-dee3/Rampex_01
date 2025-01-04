@@ -12,7 +12,8 @@ const Apps = () =>{
         <BrowserRouter>
         <Routes>
           <Route path="/CreateUser" element={<CreateUser/>}/>
-          <Route path ="/UpdateUser" element={<UpdateUser/>}/>
+          <Route path ="/UpdateUser/:id" element={<UpdateUser/>}/>
+          <Route path="/User/:id" element={<User/>}/>
           <Route path="/User" element={<User/>}/>
         </Routes>
         </BrowserRouter>

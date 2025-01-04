@@ -17,12 +17,14 @@ const User = () => {
     useEffect(()=>{
         axios.get('http://localhost:3000/api/user/fetch').then(result=>{
 
-            setuser(result.data);
-           // setuser(result.data.users);
+            //setuser(result.data);
+            setuser(result.data.users);
         }).catch(err=>{
             console.log(err)
         })
     },[]) 
+
+   
 
 
   return (
@@ -44,8 +46,9 @@ const User = () => {
                 <td>{users.email}</td>
                 <td>{users.address}</td>
                 <td>
-                <Link to = "/UpdateUser ">update user</Link>
-                <Link to = "/delete">delete user</Link>
+                <Link to = {`/update/$usem._id`} >update user</Link>
+                {/* <Link to = "/delete">delete user</Link> */}
+                <button onClick={(e)=>{deleteUser}}>Delete</button>
                 </td>
             </tr>
         ))

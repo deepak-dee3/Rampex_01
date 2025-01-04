@@ -1,5 +1,9 @@
+
 const express = require("express");
+//const cors = require('cors');
 const app = express();
+
+
 
 
 
@@ -39,6 +43,13 @@ app.get('/user/new',(req,res)=>{
 const userRouter = require('./routes/user');
 
 app.use('/users',userRouter)
+//app.use(cors());
+// app.use(cors({
+//     origin: 'http://localhost:5173',  // Frontend URL
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+// }));
+
 
 
 

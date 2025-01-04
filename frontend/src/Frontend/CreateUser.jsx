@@ -4,48 +4,41 @@ import axios from 'axios';
 
 export const CreateUser = () => {
 
-  // const [formdata,setFormdata] = useState(
-  //   {
-  //     name:'',
-  //     email:'',
-  //     address:'',
-  //   }
-  // )
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [address,setAddress] = useState('');
 
-  // const handleChange = (e) => {
+  const submit = (e) =>{
 
-  //   // const { name, value } = e.target;
-
+    e.preventDefault();
     
-  //   // setFormdata({ ...formdata, [name]: value });
-  //   const { name, value } = e.target; // Destructure name and value from input
-  //   setFormData({ ...formData, [name]: value }); 
-
-  // }
-  // const handleSubmit = (e) =>{
-
-  //   e.preventDefault();
-
-  //   axios.post('http://localhost:3000/api/user/create',formdata);
-  //   alert('User created successfully!');
+    axios.post('http://localhost:3000/api/user/create', { name, email, address })
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(err => {
+        console.error("There was an error!", err);
+    });
 
 
-  // }
+  }
+
 
 
   return (
     <>
     <div>CreateUser</div>
 
-    <form onSubmit={handleSubmit}>
-        <label For="email">Email</label>
-        <input //onChange={handleChange} value={formdata.email}
+    <form onSubmit={submit}
+    >
+        <label>Email</label>
+        <input onChange={(e)=>{setName(e.target.value)}}
          type="email" name="email" id ="email" /><br/>
-        <label For="name">Name</label>
-        <input //onChange ={handleChange} value={formdata.name}
+        <label >Name</label>
+        <input  onChange={(e)=>{setEmail(e.target.value)}}
          type="text" name="name" id ="name" /><br/>
-        <label For="address">Address</label>
-        <input // onChange={handleChange} value={formdata.address}
+        <label >Address</label>
+        <input  onChange={(e)=>{setAddress(e.target.value)}}
          type="text" name="address" id ="address" /><br/>
 
         <button type="submit">Create</button>

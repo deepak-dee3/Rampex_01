@@ -3,8 +3,11 @@ import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import dotenv from 'dotenv'; 
 import router from './routes/userRoutes.js';
+import cors from 'cors';
+
 
 const app = express();
+app.use(cors());
 
 app.use(bodyParser.json());  //body-parser is a middleware ;for passing the json request to body
 dotenv.config()
