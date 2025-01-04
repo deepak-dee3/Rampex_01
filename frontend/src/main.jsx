@@ -1,11 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import NavBar from './NavBar'
-import Deepak from './Deepak'
 
 
-import { BrowserRouter } from 'react-router-dom'
+
+
+import Apps from './Frontend/Apps'
 
 
 
@@ -17,7 +16,8 @@ createRoot(document.getElementById('root')).render(
     <NavBar/>
     </BrowserRouter> */}
     {/* <NavBar/> */}
-    <Deepak/>
+    {/* <Deepak/> */}
+    <Apps/>
     
    
     
