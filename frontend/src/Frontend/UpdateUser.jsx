@@ -23,7 +23,6 @@ const UpdateUser = () => {
           }).catch(err=>{console.log(err)})
       }
 
-
   return (
     <>
     <div>UpdateUser</div>
