@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState  , useEffect} from 'react'
-import UpdateUser from './UpdateUser'
+//import UpdateUser from './UpdateUser'
 import axios from 'axios';
+import './User.css';
+
 
 
 const User = () => {
@@ -15,9 +17,9 @@ const User = () => {
     ]);
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/api/user/fetch').then(result=>{
+        axios.get('https://rampex-deployment-2.onrender.com/api/user/fetch').then(result=>{
 
-            //setuser(result.data);
+            //setuser(result.data);http://localhost:3000
             setuser(result.data.users);
         }).catch(err=>{
             console.log(err)
